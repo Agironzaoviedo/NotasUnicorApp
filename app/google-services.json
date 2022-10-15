@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "495408435830",
+    "firebase_url": "https://notas-unicorapp.firebaseio.com",
+    "project_id": "notas-unicorapp",
+    "storage_bucket": "notas-unicorapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495408435830:android:cf6f1977acd61554",
+        "android_client_info": {
+          "package_name": "sistemas.ing.gironza.notasunicorappultimate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495408435830-t4s2c47o11posripfp0uhocp7102nm7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sistemas.ing.gironza.notasunicorappultimate",
+            "certificate_hash": "44883c16dff47189ca3c56b8591c36b4cd38b42c"
+          }
+        },
+        {
+          "client_id": "495408435830-dk6a0bphi9s1iark8kokccbdegq3vdha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqYDLwac3xWDSdxMFhSZzWNzaXa0JPnwE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495408435830-dk6a0bphi9s1iark8kokccbdegq3vdha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

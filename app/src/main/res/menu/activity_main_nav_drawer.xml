@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sinc"
+            android:title="@string/sinc_desde_powcampus"
+            android:icon="@drawable/syncnegro"
+            />
+        <item
+            android:id="@+id/agg"
+            android:title="@string/AddMateria"
+            android:icon="@drawable/add_matherblak"
+            />
+        <item
+            android:id="@+id/Calcular"
+            android:title="@string/calcularCortes"
+            android:icon="@drawable/calculat"
+            />
+        <item
+            android:id="@+id/Descargas"
+            android:title="@string/desc_y_calif"
+            android:icon="@drawable/download"
+            />
+        <item
+            android:icon="@drawable/ubicar"
+            android:id="@+id/UbicorM"
+            android:title="@string/mapa_ubicor"
+            />
+        <item
+            android:icon="@drawable/about"
+            android:id="@+id/About"
+            android:title="@string/About"
+            />
+    </group>
+
+    <item android:title="@string/comunicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/compartir_app"
+                />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/escribir_al_autor"  />
+            <item
+                android:id="@+id/web"
+                android:icon="@drawable/web"
+                android:title="@string/web_notas_unicorapp"  />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Calendario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/cuadrado_materia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="11"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="6"
+                    android:id="@+id/mensaje"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:width="30sp"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Escoja una fecha y luego agregue su recordatorio"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/holo_orange_light"/>
+
+                <Button
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="4"
+                    android:id="@+id/BCaAcad"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableRight="@drawable/calendar_acad"
+                    android:text="@string/CaldendarAcad"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="2dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/cuadrado_materia"
+                android:elevation="7dp"
+                >
+
+                <CalendarView
+                    android:id="@+id/Calendario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:addStatesFromChildren="false"
+                    android:selectedWeekBackgroundColor="@color/colorVerdeApp">
+
+                </CalendarView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/mensajeCortes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Lista de recordatorios" />
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center|top"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/ListaCalendario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/BFABpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:theme="@style/Widget.AppCompat.Button"
+            android:src="@drawable/add_mather" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

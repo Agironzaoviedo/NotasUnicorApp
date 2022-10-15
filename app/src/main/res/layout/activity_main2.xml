@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondogray"
+    android:orientation="vertical"
+    tools:context=".MainActivityNav">
+
+    <HorizontalScrollView
+        android:layout_weight="9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="11"
+            android:rowCount="2"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/Blunes"
+                    android:textSize="11sp"
+                    android:onClick="onClick"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemaBotonDias"
+                    android:textColor="@color/colorazuloscuro"
+                    android:text="@string/dia0"
+                    />
+                <android.support.v4.widget.Space
+                    android:layout_width="134dp"
+                    android:layout_height="0dp" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LVlunes">
+                </ListView>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="2dp"
+                >
+            </View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/Bmartes"
+                    android:textSize="11sp"
+                    android:onClick="onClick"
+                    android:textColor="@color/colorazuloscuro"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemaBotonDias"
+                    android:text="@string/dia1"
+                    />
+                <android.support.v4.widget.Space
+                    android:layout_width="134dp"
+                    android:layout_height="0dp" />
+                <ListView
+                    android:layout_width="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LVmartes">
+
+                </ListView>
+            </LinearLayout>
+            <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="2dp"
+                >
+            </View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/Bmiercoles"
+                    android:textSize="11sp"
+                    android:onClick="onClick"
+                    android:theme="@style/ThemaBotonDias"
+                    android:textColor="@color/colorazuloscuro"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia2"
+                    />
+                <android.support.v4.widget.Space
+                    android:layout_width="134dp"
+                    android:layout_height="0dp" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LVmiercoles">
+
+                </ListView>
+            </LinearLayout>
+            <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="2dp">
+            </View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <Button
+                    android:onClick="onClick"
+                    android:id="@+id/Bjueves"
+                    android:textSize="11sp"
+                    android:theme="@style/ThemaBotonDias"
+                    android:textColor="@color/colorazuloscuro"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia3"
+                    />
+                <android.support.v4.widget.Space
+                    android:layout_width="134dp"
+                    android:layout_height="0dp" />
+                <ListView
+                    android:layout_width="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LVjueves">
+
+                </ListView>
+            </LinearLayout>
+            <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="2dp"
+                >
+            </View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <Button
+
+                    android:id="@+id/Bviernes"
+                    android:onClick="onClick"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorazuloscuro"
+                    android:layout_gravity="center"
+                    android:theme="@style/ThemaBotonDias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia4"
+                    />
+                <android.support.v4.widget.Space
+                    android:layout_width="134dp"
+                    android:layout_height="0dp" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LVviernes">
+                </ListView>
+            </LinearLayout>
+            <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="2dp"
+                >
+            </View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/Bsabado"
+                    android:textSize="11sp"
+                    android:onClick="onClick"
+                    android:theme="@style/ThemaBotonDias"
+                    android:textColor="@color/colorazuloscuro"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia5"
+                    />
+                <android.support.v4.widget.Space
+                    android:layout_width="134dp"
+                    android:layout_height="0dp" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LVsabado">
+                </ListView>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

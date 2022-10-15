@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondogray"
+    android:orientation="vertical"
+    android:weightSum="11"
+    tools:context=".Web_Descarga">
+
+    <LinearLayout
+        android:id="@+id/baner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:background="@drawable/cuadrado_materia"
+        android:elevation="7dp"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="24dp"
+                android:text="@string/calificaciones"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/Subtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="23dp"
+                android:text="@string/calificaciones"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mapaCompleto"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:text="Mapa completo"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/ubicar"
+            android:background="?attr/selectableItemBackground"
+            android:elevation="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/LProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:max="100" />
+
+    <WebView
+        android:id="@+id/webDes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    </WebView>
+
+
+</LinearLayout>

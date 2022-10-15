@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/Vgeneral"
+        android:title="Cambiar vista" />
+    <item
+        android:id="@+id/CompHorario"
+        android:title="Compartir horario" />
+    <item
+        android:id="@+id/del"
+
+        android:title="@string/Exit">
+        <menu>
+            <item
+                android:id="@+id/sub"
+                android:title="@string/desea_salir" />
+            <item
+                android:title="@android:string/cancel" />
+        </menu>
+    </item>
+
+
+</menu>

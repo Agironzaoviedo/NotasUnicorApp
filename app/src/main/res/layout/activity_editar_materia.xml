@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".EditarMateria">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/baner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:background="@drawable/cuadrado_materia"
+                android:elevation="7dp"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/Titulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="@string/calificaciones"
+                        android:textColor="@android:color/holo_purple"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/Subtitulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:text="@string/ingrese_todos_los_datos"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="2dp"/>
+
+
+            <LinearLayout
+                android:background="@drawable/cuadrado_materia"
+                android:elevation="7dp"
+                android:layout_margin="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:textColor="@android:color/holo_red_light"
+                    android:text="@string/dia"
+                    android:paddingLeft="20dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/SpinDia"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="52dp"
+                    android:entries="@array/dias"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="13"
+                >
+                <TextView
+                    android:textColor="@color/colorVerdeApp"
+                    android:text="@string/horas_de"
+                    android:textSize="18sp"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/desde"
+                    android:layout_width="0dp"
+                    android:maxLength="2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:hint="#"
+                    android:inputType="numberSigned" />
+                <TextView
+                    android:textColor="@color/colorVerdeApp"
+                    android:text="@string/to"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <AutoCompleteTextView
+                    android:id="@+id/hasta"
+                    android:hint="#"
+                    android:inputType="numberSigned"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+                <Spinner
+                    android:id="@+id/ampm"
+                    android:entries="@array/ampm"
+                    android:gravity="center"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Nombre de la materia"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/EditNombre"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Salón (Ej: Bloque 11)"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/EditSalon"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="4.2"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:hint="@string/TextoMeta"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/EditMeta"
+                            android:gravity="center"
+                            android:text="3.0"
+                            android:maxLength="4"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/TextoMeta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:hint="# de creditos"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/EditCredit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:maxLength="2" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="9.8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:hint="@string/corte1"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/EditCort1"
+                            android:text="3.0"
+                            android:maxLength="4"
+                            android:inputType="numberDecimal"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:hint="@string/corte2"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/EditCort2"
+                            android:gravity="center"
+                            android:text="3.0"
+                            android:maxLength="4"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:hint="@string/corte3"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/EditCort3"
+                            android:gravity="center"
+                            android:text="3.0"
+                            android:maxLength="4"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/EditBtnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/gdr"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@color/colorazuloscuro"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

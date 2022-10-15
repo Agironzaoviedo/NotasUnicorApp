@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/atras"
+        android:icon="@drawable/left"
+        android:title="@string/atras"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/adela"
+        android:icon="@drawable/right"
+        android:title="@string/adelante"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/actualizar"
+        android:icon="@drawable/sync"
+        android:title="@string/Actualizar"
+        app:showAsAction="ifRoom"
+        />
+</menu>

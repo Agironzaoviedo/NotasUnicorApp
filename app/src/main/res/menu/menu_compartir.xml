@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/UbicarMateria"
+        android:orderInCategory="100"
+        android:title="@string/ubicar_materia"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/compartirM"
+        android:title="@string/compartir_materia">
+        <menu>
+            <item
+                android:id="@+id/m_actual"
+                android:orderInCategory="100"
+                android:title="@string/materia_actual"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/todasdia"
+                android:orderInCategory="100"
+                android:title="@string/todas_de_este_dia"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/todosdias"
+                android:orderInCategory="100"
+                android:title="@string/todo_el_horario"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+
+</menu>

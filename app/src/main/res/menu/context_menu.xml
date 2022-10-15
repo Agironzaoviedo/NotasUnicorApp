@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/ubicor"
+        android:icon="@drawable/ubicar"
+        android:title="@string/ubicar"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/edits"
+        android:title="@string/EditMateria"
+        />
+
+    <item
+        android:id="@+id/delet"
+
+        android:title="@string/eliminar">
+        <menu>
+            <item
+                android:id="@+id/submenuDel"
+                android:title="@string/deseaEliminar"/>
+            <item
+                android:title="@android:string/cancel"/>
+        </menu>
+    </item>
+
+</menu>

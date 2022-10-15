@@ -1,0 +1,173 @@
+<resources>
+
+    <array name="dias">
+
+        <item name="Lunes">Monday</item>
+        <item name="Martes">Tuesday</item>
+        <item name="Miercoles">Wednesday</item>
+        <item name="Jueves">Thursday</item>
+        <item name="Viernes">Friday</item>
+        <item name="Sabado">Saturday</item>
+    </array>
+
+    <array name="horas">
+        <item name="1_">1</item>
+        <item name="2_">2</item>
+        <item name="3_">3</item>
+        <item name="3_">3</item>
+        <item name="4_">4</item>
+        <item name="5_">5</item>
+        <item name="6_">6</item>
+        <item name="7_">7</item>
+        <item name="8_">8</item>
+        <item name="9_">9</item>
+        <item name="10_">10</item>
+        <item name="11_">11</item>
+        <item name="12_">12</item>
+    </array>
+
+    <string-array name="ampm">
+        <item name="am">am</item>
+        <item name="pm">pm</item>
+    </string-array>
+
+    <string name="app_name">Notes UnicorApp Ultimate</string>
+    <string name="materiaName">Name of materia</string>
+    <string name="TextoMeta">Meta</string>
+    <string name="BmasInfo">+ More details +</string>
+    <string name="diadesemana">Day: </string>
+
+    <string name="lugar">Place.</string>
+    <string name="creditos">3</string>
+    <string name="notificacion">Notification</string>
+    <string name="animo"> </string>
+    <string name="Textcred">Credits: </string>
+    <string name="definitiva">Definitive </string>
+    <string name="mensaje"># Meta no defined #</string>
+    <string name="mensajeCortes">1st, 2nd y 3rd corte. Minimum for the meta </string>
+    <string name="NotaMeta">3.0</string>
+    <string name="BActMeta">Define Meta</string>
+    <string name="BActNotaFinal">Refresh Definitive</string>
+    <string name="corte1">1st corte</string>
+    <string name="corte2">2nd corte</string>
+    <string name="corte3">3rd corte</string>
+    <string name="Notacorte1">3.0</string>
+    <string name="Notacorte2">3.0</string>
+    <string name="Notacorte3">3.0</string>
+    <string name="NotaDefinitiva">3.0</string>
+    <string name="CalCortes">Calculate cuts</string>
+    <string name="dia0">Monday</string>
+    <string name="dia1">Tuesday</string>
+    <string name="dia2">Wednesday</string>
+    <string name="dia3">Thursday</string>
+    <string name="dia4">Friday</string>
+    <string name="dia5">Saturday</string>
+    <string name="MensajediaD">It\'s a good day</string>
+    <string name="Mensajedia0">Monday, good day to start</string>
+    <string name="Mensajedia1">Tuesday day to continue</string>
+    <string name="Mensajedia2">Wednesday good ideas day</string>
+    <string name="Mensajedia3">Thursday day practice what I learned</string>
+    <string name="Mensajedia4">Friday day to end well</string>
+    <string name="Mensajedia5">Saturday day to end successfully</string>
+
+    <string name="gdr">Save</string>
+    <string name="univ">University of Córdoba</string>
+    <string name="autor">Author\n Anderson Gironza</string>
+    <string name="declaracion">… Jesus My Lord and Savior …</string>
+    <string name="marca">Powered By</string>
+    <string name="marca3">Notas UnicorApp\nUniversity of Córdoba</string>
+    <string name="marca1">Systems Engineering \n 2019 Copyright© </string>
+    <string name="marca2">Systems Engineering</string>
+    <string name="acerca">About Notas UnicorApp</string>
+    <string name="salon">Place:</string>
+    <string name="hora">Hour:</string>
+    <string name="aggHorario"> Add \n Schedule </string>
+    <string name="Actualizar">Update</string>
+    <string name="nmaterias">N° Matters:</string>
+    <string name="ncreditos">N° Credits:</string>
+    <string name="Version">Versión 1.50</string>
+    <string name="CaldendarAcad">Academic calendar</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_example_activity">example_activity</string>
+    <string name="title_activity_main_nav">MainActivityNav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">POWERED By\nING. of SISTEMS\n\nAG</string>
+    <string name="pr_xima_nclase">Next\nClass</string>
+    <string name="calendarios">Calendars</string>
+    <string name="calcular">Calculate</string>
+    <string name="TextDesac_Notif">Notifications disabled!</string>
+    <string name="TextAct_Notif">Notifications activated!</string>
+    <string name="AddMateria">Add matters or activities</string>
+    <string name="AddEnDia">Add in Day</string>
+    <string name="EditMateria">Edit matter</string>
+    <string name="LleneAllCampos">Fill all the fields!</string>
+    <string name="ExitoEdit">Edited matter!</string>
+    <string name="ExitoAdd">Matter added on</string>
+    <string name="horas_de">Hours: From</string>
+    <string name="to">to</string>
+    <string name="salon_">Room</string>
+    <string name="nombreMateria">Name</string>
+    <string name="creditosMat">Credits</string>
+    <string name="dia">Day</string>
+    <string name="MensajeMetaModif">The meta has been modified, you want to update the meta</string>
+    <string name="errorSave">Error saving</string>
+    <string name="camposVoid">There are empty fields!</string>
+    <string name="sinc_desde_powcampus">Sync. from PowCampus</string>
+    <string name="calcularCortes">Calculate cortes</string>
+    <string name="desc_y_calif">Qualifications</string>
+    <string name="About">About</string>
+    <string name="comunicate">Communicate </string>
+    <string name="compartir_app">Share App</string>
+    <string name="escribir_al_autor">Write to the author</string>
+    <string name="eliminar">Delete</string>
+    <string name="deseaEliminar">Yes, delete matter</string>
+    <string name="Exit">Exit</string>
+    <string name="desea_salir">Yes, exit the App</string>
+    <string name="menosDetalles">- Hide details -</string>
+    <string name="rangoMeta">The meta should be between 3.0 and 5.0</string>
+    <string name="updateValores">¿Update values?</string>
+    <string name="avisodeCortes">The values ​​of the cortes in this matter which are not selected, will be update.</string>
+    <string name="sinCambios">No Changes were Made</string>
+    <string name="mismaMeta">Your meta is the same</string>
+    <string name="eliminada">Eliminated</string>
+    <string name="como_sincronizar">How to Synchronize?</string>
+    <string name="top_secret">Top Secret</string>
+    <string name="claves_de_wifi_unicor">Unicor wifi passwords</string>
+    <string name="nohayproxima">There are no more matters to see on this day</string>
+    <string name="nextClass">Next class</string>
+    <string name="noMasClases">There are no more classes today</string>
+    <string name="update">Update</string>
+    <string name="calificaciones">Qualifications</string>
+    <string name="sincHorario">Sync.\nSchedule</string>
+    <string name="horario">Schedule</string>
+    <string name="vista_general_completa">General / complete view</string>
+    <string name="nombre">Name</string>
+    <string name="masDetalles">- More details -</string>
+    <string name="politicas_de_privacidad">Privacy policies</string>
+    <string name="web_notas_unicorapp">Web Notes UnicorApp</string>
+    <string name="ultimaactualizacion">Last update</string>
+    <string name="volver">Back</string>
+    <string name="compartir_materia">Compartir materia(s)</string>
+    <string name="materia_actual">Current subject</string>
+    <string name="todas_de_este_dia">All of this day</string>
+    <string name="todo_el_horario">All schedule</string>
+    <string name="eventos">Events</string>
+    <string name="atras">atras</string>
+    <string name="adelante">adelante</string>
+    <string name="ubicar">Ubicar</string>
+    <string name="ubicar_materia">Localizar en el mapa Ubicor </string>
+    <string name="mapa_ubicor">Mapa Ubicor</string>
+    <string name="ingrese_todos_los_datos">Ingrese todos los datos</string>
+
+</resources>
+
